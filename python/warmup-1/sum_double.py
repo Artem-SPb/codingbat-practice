@@ -18,6 +18,8 @@
 #    компактной записи: `return (a + b) * 2 if a == b else a + b`.
 
 # --- Решение ---
+
+
 def sum_double(a, b):
     sum_val = a + b
     if a == b:
