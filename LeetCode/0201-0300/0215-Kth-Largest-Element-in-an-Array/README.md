@@ -26,7 +26,6 @@
 
 - **Подход 1: Сортировка.**
   Самое очевидное решение — отсортировать массив по убыванию и взять элемент с индексом `k-1`.
-
   - **Сложность:** O(N log N) по времени из-за сортировки. Это работает, но можно ли быстрее?
 
 - **Подход 2: Куча (Heap).**
@@ -35,7 +34,6 @@
   Идея в том, чтобы поддерживать структуру, которая хранит `k` самых больших элементов, встреченных на данный момент. Для этой цели идеально подходит **min-heap** (куча с минимумом на вершине) размером `k`.
 
   Почему именно **min-heap** для поиска **наибольшего**?
-
   1.  Мы итерируем по всем числам массива.
   2.  Каждое число мы добавляем в нашу min-heap.
   3.  Если размер кучи становится `k+1`, мы удаляем из нее самый маленький элемент (`heappop`).
@@ -114,7 +112,6 @@ Note that it is the k-th largest element in the sorted order, not the k-th disti
 
 - **Approach 1: Sorting.**
   The most obvious solution is to sort the array in descending order and take the element at index `k-1`.
-
   - **Complexity:** O(N log N) time due to sorting. This works, but can we do better?
 
 - **Approach 2: Heap.**
@@ -123,7 +120,6 @@ Note that it is the k-th largest element in the sorted order, not the k-th disti
   The idea is to maintain a data structure that stores the `k` largest elements seen so far. A **min-heap** of size `k` is perfect for this purpose.
 
   Why a **min-heap** to find the **largest** element?
-
   1.  We iterate through all numbers in the array.
   2.  We add each number to our min-heap.
   3.  If the heap size becomes `k+1`, we remove the smallest element from it (`heappop`).
